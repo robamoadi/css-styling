@@ -1,0 +1,68 @@
+div > p::first-letter{
+    color: red;
+    font-size: 5em;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px black;
+}
+.hero{
+    background-color: yellow;
+    margin-right: 450px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#text{
+    text-decoration: none ;
+}
+#line{
+    text-decoration: line-through;
+}
+.center{
+    text-align: center;
+    text-transform: uppercase;
+}
+.dog{
+    background-color:rgb(29, 108, 161) ;
+    text-align: center;
+    margin: 10px 350px;
+    padding: 2px;
+}
+.image{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.container{
+    background-image: url("../img/black.space.jpg");
+    text-align: center;
+    margin: 20px 350px;
+    padding: 40px;
+}
+.space{
+    background-color: #000000;
+    background-image: url(../img/black.space.jpg);
+    text-align: center;
+    margin: 20px 350px;
+    
+}
+#planet{
+    border: white;
+    border-radius: 350px;
+    width: 50px;
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+#white{
+    border: white;
+    border-radius: 350px;
+    width: 100px;
+    margin: 120px 20px;
+    
+}
+#round{
+    border: white;
+    border-radius: 350px;
+    width: 30px;
+    margin-bottom: 250px;
+    margin-left: 60px;
+}

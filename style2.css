@@ -1,0 +1,91 @@
+.float{
+    width: 50px;
+    float: right;
+}
+.article{
+    background-color: rgb(181, 209, 231);
+    padding-bottom: 20px;
+    width: 40%;
+}
+.big{
+    border: 2px solid black;
+    width: 20%;
+    background-color: #6cb1f1;
+}
+#first{
+    background-color: #5a9fdf;
+    border: 1px solid black;
+    height: 40px;
+    width: 20%;
+
+}
+#second{
+    background-color: #20588d;
+    border: 1px solid black;
+    height: 40px;
+    width: 40%;
+    
+}
+#third{
+    background-color: #153d63;
+    border: 1px solid black;
+    height: 40px;
+    width: 75%;
+
+}
+#forth{
+    background-color: #0c2236;
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+}
+.container{
+    display: grid;
+    height: 200px;
+    width: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-areas: 
+    "main section"
+    "contant contant";
+}
+#main{
+    background-color: yellow;
+    grid-area: main;
+}
+#section{
+    background-color: greenyellow;
+    grid-area: section;
+}
+#contant{
+    background-color: green;
+    grid-area: contant;
+}
+.hero{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+    text-align: center;
+    border: 1px solid black;
+    
+}
+#header{
+    background-color: #5a9fdf;
+    
+}
+#nav{
+    background-color: rgb(156, 37, 156);
+}
+#secion{
+    background-color: rgb(22, 114, 85);
+    
+}
+#footer{
+    background-color: #5a9fdf;
+}
