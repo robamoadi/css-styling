@@ -1,17 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+            grid-template-areas:
+                "start"
+                "end"
+                "middle"
+                "copy";
+                text-align: center;
+                color: beige;
+                padding: 10px;
+        }
+
+        .start {
+            grid-area: start;
+            background-color: purple;
+        }
+
+        .end {
+            grid-area: end;
+            background-color: rgb(46, 160, 148);
+        }
+
+        .middle {
+            grid-area: middle;
+            background-color: palevioletred;
+        }
+
+        .copy {
+            grid-area: copy;
+            background-color: grey;
+        }
+        table,th,td{
+            border: 3px solid white;
+            border-collapse: collapse;  
+            padding: 60px 130px;  
+            margin: 10px;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: rgb(211, 211, 32);
+        }
+        #green{
+            background-color: green;
+        }
+        #pink{
+            background-color:rgb(199, 74, 95);
+        }
+        body{
+            margin: 0px;
+        }
+    </style>
 </head>
-<body >
-    <div class="hero">
-        <div id="header"><h1>Header</h1></div>
-        <div id="nav"><h3>Nav</h3></div>
-        <div id="section" style="margin: 10px;"><h3>Section</h3></div>
-        <div id="footer"><h2>Footer</h2></div>
+
+<body>
+    <div class="container">
+        <div class="start">
+            <h1>Header</h1>
+        </div>
+        <div class="end">
+            <h3>Nav</h3>
+        </div>
+        <div class="middle">
+            <table>
+                <tr>
+                    <th id="red">Red</th>
+                    <th id="red">Red</th>
+                    <th id="yellow">Yellow</th>
+                    <th id="yellow">Yellow</th>
+                </tr>
+                <tr>
+                    <td id="red">Red</td>
+                    <td id="red">Red</td>
+                    <td id="yellow">Yellow</td>
+                    <td id="yellow">Yellow</td>
+                </tr>
+                <tr>
+                    <td id="green">Green</td>
+                    <td id="green">Green</td>
+                    <td id="pink">Pink</td>
+                    <td id="pink">Pink</td>
+                </tr>
+                <tr>
+                    <td id="green">Green</td>
+                    <td id="green">Green</td>
+                    <td id="pink">Pink</td>
+                    <td id="pink">Pink</td>
+                </tr>
+            </table>
+        </div>
+        <div class="copy">
+            <h3>Footer</h3>
+        </div>
     </div>
-    
 </body>
+
 </html>
